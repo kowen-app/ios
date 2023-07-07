@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+let backgroundGradient = LinearGradient(
+    colors: [Color.red, Color.blue],
+    startPoint: .top, endPoint: .bottom)
+
 struct ContentView: View {
     var body: some View {
         VStack {
@@ -16,6 +20,7 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .background(backgroundGradient)
     }
 }
 
